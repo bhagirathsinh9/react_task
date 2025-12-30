@@ -4,7 +4,7 @@ import Todo from './Todo'
 export default function Main() {
   return (
     <div>
-        <Todo/>
+      <Todo />
     </div>
   )
 }

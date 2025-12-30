@@ -7,42 +7,38 @@ import Home from './page/Home'
 
 const browserRouter = createBrowserRouter([
   {
-    path:'/',
+    path: '/',
     // element:<Home/>,
-    errorElement:<NotFound404/>,
-     children: [
-    {
-      index: true,      
-      element: <Home />,
-    },
-    {
-      path: 'blog',     
-      element: <BlogList />,
-    },
-  ],
+    errorElement: <NotFound404 />,
+    children: [
+      {
+        index: true,
+        element: <Home />,
+      },
+      {
+        path: 'blog',
+        element: <BlogList />,
+      },
+    ],
   },
   {
-    path:'/blog/:id',
-    element:<BlogDetails/>,
+    path: '/blog/:id',
+    element: <BlogDetails />,
     //use For this route if blog not found
-    errorElement:<NotFound404/>
+    errorElement: <NotFound404 />,
   },
-  
+
   //this use for any route not defined
   {
-    path:"*",
-    element:<NotFound404/>
-  }
-]);
+    path: '*',
+    element: <NotFound404 />,
+  },
+])
 
 function App() {
-
-
-
   return (
     <>
-   
-    <RouterProvider router={browserRouter}/>
+      <RouterProvider router={browserRouter} />
     </>
   )
 }

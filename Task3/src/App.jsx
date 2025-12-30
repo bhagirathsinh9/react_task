@@ -1,11 +1,11 @@
-import BlogList from "./componets/BlogList"
+import { Fragment } from 'react'
+import BlogList from './componets/BlogList'
 
 function App() {
-
   return (
-    <>
-    <BlogList/>
-    </>
+    <Fragment>
+      <BlogList />
+    </Fragment>
   )
 }
 
