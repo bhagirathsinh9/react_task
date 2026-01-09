@@ -1,10 +1,9 @@
 import { useState } from 'react'
 import './App.css'
-import UserData from './Componets/UserCard'
 import { useEffect } from 'react'
-import axios from 'axios'
-import UserCard from './Componets/UserCard'
+import UserCard from './componets/UserCard'
 import { Fragment } from 'react'
+import { getUsers } from './utils/user.service'
 
 function App() {
   const [userData, setUserData] = useState([])
@@ -14,23 +13,19 @@ function App() {
     const fetchUsers = async () => {
       try {
         setLoading(true)
-        const res = await axios.get(
-          'https://jsonplaceholder.typicode.com/users',
-        )
-        setUserData(res.data)
-        console.log(res.data)
+        const data = await getUsers()
+        setUserData(data)
       } catch (error) {
         console.log('Error fetching user data:', error)
       } finally {
         setTimeout(() => {
           setLoading(false)
-        }, 2000)
+        }, 200)
       }
     }
 
     fetchUsers()
   }, [])
-
 
   return (
     <Fragment>
