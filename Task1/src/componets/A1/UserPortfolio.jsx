@@ -5,7 +5,7 @@ export default function UserPortfolio({ bio }) {
   const data = {
     name: 'Bhagirathsinh Nakum',
     age: 23,
-    image:image
+    image: image,
   }
   return (
     <div
