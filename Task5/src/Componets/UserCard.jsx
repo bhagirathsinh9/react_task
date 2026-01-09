@@ -8,13 +8,11 @@ export default function UserCard({ userData }) {
           key={user.id}
           className='max-w-4xl p-6 mx-auto bg-white border rounded-xl shadow-md hover:shadow-lg transition'
         >
-          {/* Header */}
           <div className='mb-4'>
             <h2 className='text-xl font-semibold text-gray-800'>{user.name}</h2>
             <p className='text-sm text-gray-500'>@{user.username}</p>
           </div>
 
-          {/* Contact Info */}
           <div className='space-y-2 text-sm text-gray-700'>
             <p>
               <span className='font-medium'>📧 Email:</span> {user.email}
@@ -35,7 +33,6 @@ export default function UserCard({ userData }) {
             </p>
           </div>
 
-          {/* Address */}
           <div className='mt-4 text-sm text-gray-700'>
             <p className='font-medium'>📍 Address</p>
             <p>
@@ -46,7 +43,6 @@ export default function UserCard({ userData }) {
             </p>
           </div>
 
-          {/* Company */}
           <div className='mt-4 p-3 bg-gray-100 rounded-lg'>
             <p className='font-medium text-gray-800'>🏢 Company</p>
             <p className='text-sm'>{user?.company?.name}</p>
