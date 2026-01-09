@@ -68,7 +68,6 @@ export default function App() {
         </h2>
 
         <form onSubmit={handleSubmit} className='space-y-4'>
-          {/* Name */}
           <div>
             <label className='block text-sm font-medium mb-1'>Name</label>
             <input
@@ -80,7 +79,6 @@ export default function App() {
             />
           </div>
 
-          {/* Email */}
           <div>
             <label className='block text-sm font-medium mb-1'>Email</label>
             <input
@@ -92,7 +90,6 @@ export default function App() {
             />
           </div>
 
-          {/* Password */}
           <div>
             <label className='block text-sm font-medium mb-1'>Password</label>
             <input
@@ -104,7 +101,6 @@ export default function App() {
             />
           </div>
 
-          {/* Gender */}
           <div>
             <label className='block text-sm font-medium mb-1'>Gender</label>
             <div className='flex gap-4'>
@@ -141,7 +137,6 @@ export default function App() {
             </div>
           </div>
 
-          {/* Skills */}
           <div>
             <label className='block text-sm font-medium mb-1'>Skills</label>
             {['HTML', 'CSS', 'JavaScript', 'React', 'Node.js'].map((skill) => (
@@ -157,7 +152,6 @@ export default function App() {
             ))}
           </div>
 
-          {/* Button */}
           <button
             type='submit'
             className='w-full bg-blue-600 text-white py-2 rounded-lg font-medium hover:bg-blue-700 transition'
