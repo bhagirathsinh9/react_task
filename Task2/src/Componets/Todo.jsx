@@ -21,7 +21,6 @@ export default function Todo() {
     const filteredItem = list.filter((item, i) => {
       return i !== index
     })
-    // console.log(filteredItem);
     setList(filteredItem)
   }
 
