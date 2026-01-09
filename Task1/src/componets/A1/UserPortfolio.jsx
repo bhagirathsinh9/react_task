@@ -1,12 +1,11 @@
 import React from 'react'
-// import image from '../../assets/tempCarphoto.avif'
+import image from '../../assets/bhagirathnakum.avif'
 
 export default function UserPortfolio({ bio }) {
   const data = {
     name: 'Bhagirathsinh Nakum',
     age: 23,
-    image:
-      'https://media.licdn.com/dms/image/v2/D4D35AQFqkshe9-_mFQ/profile-framedphoto-shrink_400_400/B4DZpJCOGcGgAc-/0/1762161910429?e=1767070800&v=beta&t=jzPE_n_EnOQ4_XpMIO-FQIUrk-fctjOU2-JL8vvYBzM',
+    image:image
   }
   return (
     <div
